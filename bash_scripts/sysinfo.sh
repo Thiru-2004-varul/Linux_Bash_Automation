@@ -1,7 +1,10 @@
 #!/bin/bash
-echo "System Information"
-echo "Hostname: $(hostname)"
+echo "System Report for $(hostname)"
+echo "Date: $(date)"
 echo "Uptime: $(uptime -p)"
-echo "Logged in users: $(who)"
-echo "Memory usage: $(free -h)"
+echo "Users Logged In: $(who | wc -l)"
+echo "Memory Usage:"
+free -h
+echo "Disk Usage:"
+df -h | grep '^/dev/'
 
