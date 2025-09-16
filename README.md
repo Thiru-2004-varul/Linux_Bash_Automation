@@ -1,4 +1,5 @@
-# Linux Bash Automation Project
+# Linux Bash Automation
+
 ---
 
 ## 📊 Sample Output
